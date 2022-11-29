@@ -17,7 +17,8 @@ class ViewController: UIViewController {
     var number2 = 0
     var numberresult:Int = 0
     
-  
+      // Student ID : A00264306
+      // Student Name : Karanbhai Patel
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,6 @@ class ViewController: UIViewController {
             super.didReceiveMemoryWarning()
             // Dispose of any resources that can be recreated.
     }
-    
-    
     func allclear(){
         result.text = ""
     }
@@ -39,14 +38,9 @@ class ViewController: UIViewController {
     @IBAction func clearbtn(_ sender: Any) {
         allclear()
     }
-    
-    
-    @IBAction func zerobtn(_ sender: Any) {
+     @IBAction func zerobtn(_ sender: Any) {
         result.text = result.text! + "0"
     }
-    
-    
-    
     @IBAction func btn_result(_ sender: UIButton) {
         var number2 = Int(result.text!)!
         switch varoperator {
@@ -66,40 +60,25 @@ class ViewController: UIViewController {
             result.text = "Error"
         }
     }
-    
-    
-
     @IBAction func divisonbtn(_ sender: Any) {
         varoperator = "/"
         number1 = Int(result.text!)!
         clearText()
         
     }
-    
-    
-    @IBAction func btnseven(_ sender: Any) {
+     @IBAction func btnseven(_ sender: Any) {
         result.text = result.text! + "7"
 
     }
-    
-    
-    
-    @IBAction func btneight(_ sender: Any) {
+     @IBAction func btneight(_ sender: Any) {
         result.text = result.text! + "8"
-
-    }
-    
-    
+     }
     @IBAction func btnnine(_ sender: Any) {
         result.text = result.text! + "9"
 
     }
-    
-
-    
     @IBAction func btnfour(_ sender: Any) {
         result.text = result.text! + "4"
-
     }
     
     
@@ -109,47 +88,27 @@ class ViewController: UIViewController {
         number1 = Int(result.text!)!
         clearText()
     }
-    
-    
-    
     @IBAction func btnfive(_ sender: Any) {
         result.text = result.text! + "5"
 
     }
-    
-    
     @IBAction func btnsix(_ sender: Any) {
         result.text = result.text! + "6"
 
     }
-    
-    
     @IBAction func btnone(_ sender: Any) {
         result.text = result.text! + "1"
-
     }
-    
-    
-    
-    
-
-    
-    
-    
     @IBAction func btnminus(_ sender: Any) {
         varoperator = "-"
         number1 = Int(result.text!)!
         clearText()
-    }
-    
-    
+    } 
     @IBAction func btn_two(_ sender: UIButton) {
         result.text = result.text! + "2"
 
     }
-    
-    
-    @IBAction func btn_plus(_ sender: UIButton) {
+   @IBAction func btn_plus(_ sender: UIButton) {
         varoperator = "+"
         number1 = Int(result.text!)!
         clearText()
@@ -157,8 +116,6 @@ class ViewController: UIViewController {
     
     @IBAction func btn_three(_ sender: UIButton) {
         result.text = result.text! + "3"
-    }
-    
-    
+    } 
 }
 
